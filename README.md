@@ -122,5 +122,5 @@ build/lab_1/lab1
 Проверить результат через Python/NumPy:
 
 ```bash
-python3 scripts/verify_numpy.py 20
+python3 scripts/verify.py 20
 ```
