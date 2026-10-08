@@ -8,9 +8,10 @@ set(CMAKE_CXX_MODULE_STD ON)
 
 set(CMAKE_EXPERIMENTAL_CXX_IMPORT_STD "f35a9ac6-8463-4d38-8eec-5d6008153e7d")
 
-find_package(OpenMP REQUIRED)
 
 project("pp" LANGUAGES CXX)
+
+find_package(OpenMP REQUIRED)
 
 if(CMAKE_CXX_COMPILER_ID MATCHES "Clang|GNU")
     add_compile_options(-Wall -Wextra)
