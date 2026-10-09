@@ -69,4 +69,5 @@ Testing/
 .cache/
 
 # result save directory
-extra/
+extra/res/
+extra/matrices/
