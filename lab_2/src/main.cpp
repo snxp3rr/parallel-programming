@@ -145,8 +145,6 @@ void multiply_matrices_omp(
 
     c.assign(total, 0);
 
-    // Параллелим внешний цикл по строкам матрицы C.
-    // Каждая строка C пишется только одним потоком, поэтому гонок нет.
     #pragma omp parallel for schedule(static)
     for (int i = 0; i < n; ++i)
     {
@@ -243,7 +241,6 @@ int main(int argc, char* argv[])
 
     omp_set_num_threads(requested_threads);
 
-    // Узнаём реальное количество потоков, которое создаст OpenMP.
     int actual_threads = 1;
 
     #pragma omp parallel
@@ -335,10 +332,8 @@ int main(int argc, char* argv[])
     report.threads = actual_threads;
     report.matrix_size = uside * uside;
 
-    // 2*N^3 - N^2
     report.operations = 2ULL * uside * uside * uside - uside * uside;
 
-    // 3 матрицы: A, B, C
     report.memory_bytes =
         3ULL * report.matrix_size * static_cast<unsigned long long>(sizeof(int));
 
