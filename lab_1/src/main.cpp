@@ -175,7 +175,7 @@ int main(int argc, char* argv[])
     }
 
     const std::string matrices_dir = "extra/matrices";
-    const std::string res_dir = "extra/res";
+    const std::string res_dir = "extra/res/lab_1";
 
     const std::string filename_a = "A_" + std::to_string(n) + ".txt";
     const std::string filename_b = "B_" + std::to_string(n) + ".txt";
