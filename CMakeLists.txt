@@ -22,6 +22,17 @@ elseif(CMAKE_CXX_COMPILER_ID STREQUAL "MSVC")
     add_compile_options(/utf-8 /W4)
 endif()
 
+option(PP_ENABLE_CUDA "Build CUDA laboratory" OFF)
+
+if(PP_ENABLE_CUDA)
+    if(NOT DEFINED CMAKE_CUDA_ARCHITECTURES OR CMAKE_CUDA_ARCHITECTURES STREQUAL "")
+        set(CMAKE_CUDA_ARCHITECTURES native)
+    endif()
+
+    enable_language(CUDA)
+    add_subdirectory(lab_4)
+endif()
+
 add_subdirectory(lab_1)
 add_subdirectory(lab_2)
 add_subdirectory(extra)
