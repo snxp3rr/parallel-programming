@@ -19,7 +19,6 @@ RUNS="${RUNS:-5}"
 SEED="${SEED:-12345}"
 
 # Если CSV=1, вывод будет в формате CSV.
-# Например: CSV=1 ./scripts/run_lab1_experiments.sh > lab1_results.csv
 CSV="${CSV:-0}"
 
 # Если VERIFY=1, после замеров для каждого размера будет запускаться Python-проверка.
@@ -27,7 +26,6 @@ CSV="${CSV:-0}"
 VERIFY="${VERIFY:-0}"
 
 # Размеры по умолчанию для первой лабораторной.
-# Можно передать свои аргументами:
 # ./scripts/run_lab1_experiments.sh 200 400 800 1200 1600 2000
 if [[ $# -gt 0 ]]; then
     SIZES=("$@")
