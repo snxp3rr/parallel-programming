@@ -69,4 +69,4 @@ Testing/
 .cache/
 
 # result save directory
-extra/res/
+extra/res
