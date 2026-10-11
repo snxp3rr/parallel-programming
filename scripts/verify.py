@@ -125,7 +125,7 @@ def main() -> int:
             args.b = ROOT / "extra" / "matrices" / f"B_{expected_side}.txt"
 
         if args.c is None:
-            args.c = ROOT / "extra" / "res" / f"C_{expected_side}.txt"
+            args.c = ROOT / "extra" / "res" /  "lab_1" / f"C_{expected_side}.txt"
     else:
         if args.a is None or args.b is None or args.c is None:
             parser.error("Укажите side или все пути --a --b --c")

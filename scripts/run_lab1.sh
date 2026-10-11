@@ -22,11 +22,11 @@ SEED="${SEED:-12345}"
 CSV="${CSV:-0}"
 
 # Если VERIFY=1, после замеров для каждого размера будет запускаться Python-проверка.
-# Например: VERIFY=1 ./scripts/run_lab1_experiments.sh
+# Например: VERIFY=1 ./scripts/run_lab1.sh
 VERIFY="${VERIFY:-0}"
 
 # Размеры по умолчанию для первой лабораторной.
-# ./scripts/run_lab1_experiments.sh 200 400 800 1200 1600 2000
+# ./scripts/run_lab1.sh 200 400 800 1200 1600 2000
 if [[ $# -gt 0 ]]; then
     SIZES=("$@")
 else
