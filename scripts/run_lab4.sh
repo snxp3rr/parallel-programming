@@ -18,7 +18,7 @@ RUNS="${RUNS:-3}"
 
 # Размеры по умолчанию.
 # Можно передать аргументами:
-# ./scripts/run_lab4_experiments.sh 200 400 800
+# ./scripts/run_lab4.sh 200 400 800
 if [[ $# -gt 0 ]]; then
     SIZES=("$@")
 else
@@ -27,7 +27,7 @@ fi
 
 # Tile sizes по умолчанию.
 # Можно переопределить:
-# TILES="8 16 32" ./scripts/run_lab4_experiments.sh
+# TILES="8 16 32" ./scripts/run_lab4.sh
 TILES_STR="${TILES:-8 16 32}"
 read -r -a TILES <<< "$TILES_STR"
 

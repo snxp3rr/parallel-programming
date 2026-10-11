@@ -12,7 +12,7 @@ MAT_DIR="extra/matrices"
 RES_DIR="extra/res/lab_1"
 
 # Количество повторов для каждого размера.
-# Например: RUNS=5 ./scripts/run_lab1_.sh
+# Например: RUNS=5 ./scripts/run_lab1.sh
 RUNS="${RUNS:-5}"
 
 # Seed для генерации матриц, если файлов ещё нет.

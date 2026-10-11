@@ -18,7 +18,7 @@ RUNS="${RUNS:-1}"
 
 # Размеры матриц по умолчанию.
 # Можно передать своими аргументами:
-# ./scripts/run_lab2_experiments.sh 200 400 800
+# ./scripts/run_lab2.sh 200 400 800
 if [[ $# -gt 0 ]]; then
     SIZES=("$@")
 else
@@ -27,7 +27,7 @@ fi
 
 # Количество потоков по умолчанию.
 # Можно переопределить через переменную окружения:
-# THREADS="1 2 4 8" ./scripts/run_lab2_experiments.sh
+# THREADS="1 2 4 8" ./scripts/run_lab2.sh
 THREADS_STR="${THREADS:-1 2 4 8}"
 read -r -a THREADS <<< "$THREADS_STR"
 
