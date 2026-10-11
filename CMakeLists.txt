@@ -24,6 +24,12 @@ endif()
 
 option(PP_ENABLE_CUDA "Build CUDA laboratory" OFF)
 
+option(PP_ENABLE_MPI "Build MPI laboratory" OFF)
+
+if(PP_ENABLE_MPI)
+    add_subdirectory(lab_3)
+endif()
+
 if(PP_ENABLE_CUDA)
     if(NOT DEFINED CMAKE_CUDA_ARCHITECTURES OR CMAKE_CUDA_ARCHITECTURES STREQUAL "")
         set(CMAKE_CUDA_ARCHITECTURES native)
