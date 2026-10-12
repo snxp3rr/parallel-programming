@@ -30,6 +30,12 @@ if(PP_ENABLE_MPI)
     add_subdirectory(lab_3)
 endif()
 
+option(PP_ENABLE_LAB5 "Build Mandelbrot threads laboratory" ON)
+
+if(PP_ENABLE_LAB5)
+    add_subdirectory(lab_5)
+endif()
+
 if(PP_ENABLE_CUDA)
     if(NOT DEFINED CMAKE_CUDA_ARCHITECTURES OR CMAKE_CUDA_ARCHITECTURES STREQUAL "")
         set(CMAKE_CUDA_ARCHITECTURES native)
