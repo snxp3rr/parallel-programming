@@ -473,7 +473,7 @@ efficiency = speedup / processes
 P = 1, 2, 4
 ```
 
-![Зависимость времени выполнения от размера матрицы](extra/pic/lab_3/time_vs_N_processes.png)
+![Зависимость времени выполнения от размера матрицы](/extra/pic/lab_3/time_vs_N_processes.png)
 
 Рис. 1. Время выполнения MPI-версии для разного количества процессов
 
@@ -493,7 +493,7 @@ N = 200, 400, 800, 1200, 1600, 2000
 speedup = processes
 ```
 
-![Ускорение относительно baseline](extra/pic/lab_3/speedup_vs_processes.png)
+![Ускорение относительно baseline](/extra/pic/lab_3/speedup_vs_processes.png)
 
 Рис. 2. Ускорение MPI-версии относительно одного процесса
 
@@ -503,7 +503,7 @@ speedup = processes
 
 На графике по оси X откладывается количество MPI-процессов, по оси Y — efficiency.
 
-![Эффективность параллельного выполнения](extra/pic/lab_3/efficiency_vs_processes.png)
+![Эффективность параллельного выполнения](/extra/pic/lab_3/efficiency_vs_processes.png)
 
 Рис. 3. Эффективность использования MPI-процессов
 
